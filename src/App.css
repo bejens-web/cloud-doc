@@ -8,3 +8,20 @@
 .icon-button:focus{
   outline: none;
 }
+
+.alert{
+    padding: 0.25rem 0.5rem !important;
+    margin-top: 1rem !important;
+}
+
+.text{
+    height: 2rem;
+    line-height: 2rem;
+}
+.input {
+    height: 2rem;
+    line-height: 2rem;
+    outline: none;
+    border: 1px solid #f2f2f2;
+    border-radius: 4px;
+}

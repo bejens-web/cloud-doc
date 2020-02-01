@@ -32,9 +32,9 @@ const FileSearch: React.FC = () => {
     return (
         <div className='alert alert-primary d-flex justify-content-between align-items-center'>
             {
-                !fileSearch.isSearch &&
-                    <>
-                        <span className='col-8' >我的云文档</span>
+                !fileSearch.isSearch ?
+                    <React.Fragment>
+                        <span className='col-8 text' >我的云文档</span>
                         <button
                             type='button'
                             className='icon-button col-4'
@@ -42,25 +42,23 @@ const FileSearch: React.FC = () => {
                         >
                             <FontAwesomeIcon icon={faSearch} size='lg'/>
                         </button>
-                    </>
-            }
-            {
-                fileSearch.isSearch &&
-                <>
-                    <input
-                        className= 'col-8'
-                        ref = {refNode}
-                        value = {fileSearch.input}
-                        onChange={ (e) => {setFileSearch({isSearch: fileSearch.isSearch, input: e.target.value})} }
-                    />
-                    <button
-                        type='button'
-                        className='icon-button col-4'
-                        onClick= {() => {setFileSearch({isSearch: false, input: fileSearch.input})}}
-                    >
-                        <FontAwesomeIcon icon={faTimes} size='lg'/>
-                    </button>
-                </>
+                    </React.Fragment>
+                    :
+                    <React.Fragment>
+                        <input
+                            className= 'col-8 input'
+                            ref = {refNode}
+                            value = {fileSearch.input}
+                            onChange={ (e) => {setFileSearch({isSearch: fileSearch.isSearch, input: e.target.value})} }
+                        />
+                        <button
+                            type='button'
+                            className='icon-button col-4'
+                            onClick= {() => {setFileSearch({isSearch: false, input: fileSearch.input})}}
+                        >
+                            <FontAwesomeIcon icon={faTimes} size='lg'/>
+                        </button>
+                    </React.Fragment>
             }
         </div>
     )
