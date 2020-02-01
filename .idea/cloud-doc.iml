@@ -6,5 +6,7 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="@types/react-hooks-helper" level="application" />
+    <orderEntry type="library" name="@types/react" level="application" />
   </component>
 </module>
