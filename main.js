@@ -27,6 +27,7 @@ const createWindow = async () => {
 
     await mainWindow.loadURL(urlLocation);
 
+
     mainWindow.on('closed', () => {
         mainWindow = null;
     });
