@@ -7,7 +7,7 @@
     "start": "webpack-dev-server",
     "build": "rimraf dist/* && webpack",
     "ele": "electron .",
-    "dev": "concurrently \"wait-on http://localhost:8080 && electron .\" \"cross-env BROWSER=none npm start\"",
+    "dev": "concurrently \"wait-on http://localhost:8080 && electron .\" \"cross-env BROWSER = none npm start\"",
     "dev-ele": "concurrently \"wait-on http://localhost:8080 && electron .\" \"npm start\""
   },
   "dependencies": {

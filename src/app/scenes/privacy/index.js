@@ -53,7 +53,6 @@ export class Privacy extends React.PureComponent {
                                         </dd>
                                     </dl>
                                 </dd>
-
                             </dl>
                         </li>
                         <li>

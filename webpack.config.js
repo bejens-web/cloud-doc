@@ -188,6 +188,23 @@ module.exports = {
 
     //打开的端口
     devServer: {
-        port: 8080
+        public: 'http://localhost:8080/',
+        port: '8080',
+        inline: true,  //实时刷新
+        open: true,
+        hot: true,
+        historyApiFallback: true, //404跳转
+        watchOptions: {
+            aggregateTimeout: 300
+        },
+        proxy: [
+            {
+                context: ['/api/v1/**'],
+                target: 'http://221.122.93.189:8083/api/v1',
+                secure: false,
+                changeOrigin: true,
+                pathRewrite: {'^/api/v1': '/'}
+            }
+        ]
     }
 };

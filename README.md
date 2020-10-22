@@ -12,7 +12,7 @@ React-Electron
     npm start     (项目启动)
     npm run build (项目打包，打包地址为dist目录。打包注意事项：注意打包地址的变化、打包环境、打包压缩)
     npm run dev (桌面端---未能成功启动)
-    npm run  dev-ele (桌面端)
+    npm run  dev-ele (桌面端+PC)
 
 ## 3 业务介绍
 + dist  --- 项目打包后存放地址
