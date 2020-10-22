@@ -25,6 +25,7 @@ const createWindow = async () => {
         urlLocation = `file://${path.resolve(__dirname, '..', 'dist')}/index.html`;
     }
 
+
     await mainWindow.loadURL(urlLocation);
 
     mainWindow.on('closed', () => {
