@@ -1,0 +1,18 @@
+.home-box {
+  height: 100vh;
+  text-align: center;
+  width: 100%;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.home-box .home-left {
+  background: #5576BD;
+}
+.home-box .home-middle {
+  background: white;
+  border-right: 1px #E8E8E8 solid;
+}
+.home-box .home-right {
+  background: white;
+}
+/*# sourceMappingURL=style.css.map */

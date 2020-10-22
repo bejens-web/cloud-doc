@@ -1,0 +1,30 @@
+{
+  "id": "2142926",
+  "name": "云笔记",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "583770",
+      "name": "办公软件 word",
+      "font_class": "bangongruanjianword",
+      "unicode": "e639",
+      "unicode_decimal": 58937
+    },
+    {
+      "icon_id": "1330913",
+      "name": "添加文档",
+      "font_class": "wendang",
+      "unicode": "e64b",
+      "unicode_decimal": 58955
+    },
+    {
+      "icon_id": "10156389",
+      "name": "同步",
+      "font_class": "tongbu",
+      "unicode": "e653",
+      "unicode_decimal": 58963
+    }
+  ]
+}

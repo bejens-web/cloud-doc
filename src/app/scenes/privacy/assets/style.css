@@ -1,0 +1,44 @@
+.privacy {
+  width: 900px;
+  margin: 0 auto;
+}
+.privacy .privacy-title {
+  font-weight: 400;
+  text-align: center;
+  font-size: 28px;
+  line-height: 56px;
+  padding-top: 28px;
+}
+.privacy .privacy-main .content {
+  padding-top: 22px;
+}
+.privacy .privacy-main .content li > dl.part > dt {
+  font-size: 16px;
+  line-height: 56px;
+  font-weight: 400;
+}
+.privacy .privacy-main .content li > dl.part dd {
+  font-size: 14px;
+  line-height: 32px;
+  padding-left: 2px;
+}
+.privacy .privacy-main .content li > dl.part dd .subkey > dt {
+  font-size: 14px;
+  padding: 16px 0 16px 0;
+}
+.privacy .privacy-main .content li > dl.part dd .subkey > dd {
+  font-size: 14px;
+  text-indent: 1em;
+}
+.privacy .privacy-main .content li.last {
+  text-align: right;
+  padding: 4px 0;
+}
+.privacy .privacy-main .content li.last dl {
+  float: right;
+  padding-bottom: 4px;
+}
+.privacy .privacy-main .content li.last dl dd {
+  text-align: right;
+}
+/*# sourceMappingURL=style.css.map */

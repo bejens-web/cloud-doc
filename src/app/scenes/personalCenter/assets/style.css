@@ -1,0 +1,27 @@
+.personal_center {
+  background: white;
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 24px;
+  color: #494949;
+  width: 100%;
+  height: 100vh;
+}
+.personal_center .personal_center_title {
+  padding: 40px;
+}
+.personal_center .header_wrap {
+  margin-top: 10px;
+}
+.personal_center .info_wrap {
+  padding: 40px;
+}
+.edit-user-info {
+  width: 480px !important;
+  margin: 0 auto;
+}
+.edit-user-info .ant-modal-body .improve—info-modal {
+  width: 100%;
+  box-shadow: none;
+}
+/*# sourceMappingURL=style.css.map */

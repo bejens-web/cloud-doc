@@ -1,0 +1,34 @@
+.home-box .home-left .file-operation {
+  padding-top: 40px;
+}
+.home-box .home-left .file-operation .operation-item {
+  cursor: pointer;
+  line-height: 48px;
+}
+.home-box .home-left .file-operation .operation-item .iconfont {
+  color: white;
+  font-size: 20px;
+}
+.home-box .home-left .file-operation .operation-item:hover {
+  background: #435D99;
+}
+.home-box .home-left .file-operation .item-first {
+  padding: 14px 0;
+  margin-bottom: 40px;
+}
+.home-box .home-left .file-operation .item-first img {
+  border: 1px #E8E8E8 solid;
+  width: 42px;
+  height: 42px;
+  border-radius: 100%;
+  overflow: hidden;
+  padding: 2px;
+}
+.ant-popover-inner-content {
+  padding: 6px 8px;
+  margin: 0;
+}
+.create-file {
+  border: none;
+}
+/*# sourceMappingURL=style.css.map */
