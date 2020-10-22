@@ -1,44 +1,55 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+official-web
+公司与会通用户中心系统
+===================
 
-## Available Scripts
+## 1 项目描述
+    1 已经做了接口统一
+    2 完成国际化处理 --未涉及[如果需要可提供国际化字典]
+    3 修改登录功---未涉及
 
-In the project directory, you can run:
+## 2 项目运行
+    开发环境 node v12.16.2
+    npm install   (模块依赖安装)
+    npm start     (项目启动)
+    npm run build (项目打包，打包地址为dist目录。打包注意事项：注意打包地址的变化、打包环境、打包压缩)
 
-### `npm start`
-
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 3 业务介绍
++ dist  --- 项目打包后存放地址
++ login --- 后台登录页面--有设计未开放
++ src 
+    +   ---  app 主目录结构
+        +       --- components                            公共部分(包括样式、头部、底部、二次封装组件)
+        +       --- reducers                              数据存储
+        +       --- routers                               路由部分
+        +       --- scenes                                应用场景
+            +       --- home                              首页
+            +       --- NewsManage                        新闻页面    
+            +       --- NewsDetail                        新闻详情
+            +       --- LinkManage                        联系我们
+            +       --- CooperativeManage                 合作伙伴
+            +       --- AboutManage                       关于我们
+            +       --- personalCenter                    权限页面    
+            +       --- privacy                           隐私协议   
+            +       --- SourceInfoManage                  货源信息   
+            +  
+        +   --- services                              接口服务部分（包括url配置）
+            +       --- config.js                         打包地址文件 
+            +       --- system.js                         环境地址文件
+            +       --- urls.js                           接口文件
+            +       --- ajax.js                           接口请求文件
+        +   --- main                                  入口文件
+        +   --- store
+    +   ---  index.html 模板页面
+    
+   
+  ## 4.部署地址 
+  140.143.37.231 
+  账户:root  
+  密码：Kcwl200825*#
+   /home/cw/dist
+   http://140.143.37.231/index.html
+   新正式服务器：
+   119.45.201.68       
+   账户:root     
+   密码：kc200901WL&*
+   http://119.45.201.68/index.html

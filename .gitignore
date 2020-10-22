@@ -5,6 +5,15 @@
 /.pnp
 .pnp.js
 
+dist/
+node_modules/
+npm-debug.log
+app.bundle.js
+
+/.idea
+/package-lock.json
+*.css.map
+
 # testing
 /coverage
 
@@ -22,4 +31,4 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-/.idea
+
