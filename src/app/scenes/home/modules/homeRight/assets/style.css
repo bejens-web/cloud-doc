@@ -1,5 +1,6 @@
 .home-box .home-right .home-right-top {
   height: 88px;
+  width: 100%;
   font-size: 24px;
   text-align: left;
   line-height: 88px;
@@ -8,6 +9,11 @@
 }
 .home-box .home-right .home-right-bottom {
   height: 100%;
+  width: 100%;
+}
+.home-box .home-right .home-right-bottom .bf-container .bf-controlbar {
+  display: flex;
+  flex-wrap: nowrap;
 }
 .home-box .home-right .home-right-bottom .bf-container {
   height: 100%;

@@ -4,17 +4,27 @@
   width: 100%;
   overflow: hidden;
   margin: 0 auto;
+  display: flex;
+  flex-wrap: nowrap;
 
   .home-left {
+    width: 80px !important;
+    min-width: 80px !important;
+    height: 100%;
     background: #5576BD;
   }
 
   .home-middle {
     background: white;
+    width: 306px !important;
+    min-width: 306px !important;
+    height: 100%;
     border-right: 1px #E8E8E8 solid;
   }
 
   .home-right {
+    width: calc(~"100% - 80px - 306px") !important;
+    height: 100%;
     background: white;
   }
 }

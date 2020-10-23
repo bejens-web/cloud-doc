@@ -7,11 +7,15 @@ const defaultState = fromJS({
     homeNews: {},
     homeCooperative: {},
     homeSource: {},
-    homeControl : [
+    homeControl: [
         'undo', 'redo', 'separator', 'separator', 'text-color',
         'bold', 'italic', 'underline', 'strike-through', 'separator',
-        'remove-styles', 'separator', 'text-indent', 'text-align', 'separator',
-        'blockquote', 'code', 'separator', 'link', 'separator', 'separator', 'separator', 'clear'
+        'remove-styles',
+        'separator', 'text-indent', 'text-align', 'separator',
+        'blockquote', 'code', 'separator',
+        'link', 'separator',
+        'separator', 'separator',
+        'clear'
     ]
 });
 
