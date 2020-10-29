@@ -19,6 +19,10 @@ export class HomeMiddle extends React.PureComponent {
         console.log(value);
     };
 
+    handleClick=(value)=>{
+      console.log(value)
+    };
+
     render() {
         return (
             <React.Fragment>
@@ -32,7 +36,7 @@ export class HomeMiddle extends React.PureComponent {
                         [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29].map((items) => {
                             return (
                                 <React.Fragment>
-                                    <li className="file-item">
+                                    <li className="file-item" onClick={()=>this.handleClick(items)}>
                                             <span className="file-name">
                                                  <i className="iconfont icon-bangongruanjianword"/>
                                                 {items}君子六艺
