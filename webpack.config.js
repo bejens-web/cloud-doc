@@ -188,7 +188,7 @@ module.exports = {
 
     //打开的端口
     devServer: {
-        public: 'http://localhost:8080/',
+        public: 'http://localhost:8080',
         port: '8080',
         inline: true,  //实时刷新
         open: true,

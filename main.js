@@ -20,7 +20,7 @@ const createWindow = async () => {
     });
     let urlLocation;
     if (isDev) {
-        urlLocation = 'http://localhost:8080/';
+        urlLocation = 'http://localhost:8080';
     } else {
         urlLocation = `file://${path.resolve(__dirname, '..', 'dist')}/index.html`;
     }
