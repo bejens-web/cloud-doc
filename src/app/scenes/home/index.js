@@ -36,13 +36,13 @@ class Home extends React.PureComponent {
         const {clientHeight} = this.state;
         return (
             <Row className="home-box">
-                <div span={1} className="home-left">
+                <div className="home-left">
                     <HomeLeft/>
                 </div>
-                <div span={5} className="home-middle" style={{height: clientHeight}}>
+                <div className="home-middle" style={{height: clientHeight}}>
                     <HomeMiddle/>
                 </div>
-                <div span={18} className="home-right">
+                <div className="home-right">
                     <HomeRight/>
                 </div>
 
