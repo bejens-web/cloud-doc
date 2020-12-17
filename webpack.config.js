@@ -1,16 +1,17 @@
+const path = require('path');
 const webpack = require('webpack');
-const htmlPlugin = require('html-webpack-plugin');
+const autoprefixer = require('autoprefixer');
+const cssPathResolver = require('./cssPathResolver');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
+const htmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const CommonsChunkPlugin = require("webpack/lib/optimize/CommonsChunkPlugin");
-const path = require('path');
-const autoprefixer = require('autoprefixer');
-const CopyWebpackPlugin = require('copy-webpack-plugin');
-const cssPathResolver = require('./cssPathResolver');
 module.exports = {
     plugins: [
         new webpack.DefinePlugin({
             'process.env.NODE_ENV': JSON.stringify("production")
         }),
+
         new webpack.HotModuleReplacementPlugin(),
 
         new webpack.optimize.UglifyJsPlugin({
@@ -18,27 +19,29 @@ module.exports = {
                 warnings: false
             }
         }),
-        new htmlPlugin({
+
+        new htmlWebpackPlugin({
             template: './src/index.html',
             inject: true,
             chunks: ['manifest', 'vendor', 'main'],
             chunksSortMode: 'auto'
         }),
+
         new ExtractTextPlugin({
             filename: (getPath) => {
                 return getPath('css/[name].[chunkhash:6].css');
             },
             allChunks: true
         }),
+
         new CommonsChunkPlugin({
             name: 'main',
+            names: ['vendor', 'manifest'],
             minChunks: 2,
             children: true,
             async: true,
         }),
-        new CommonsChunkPlugin({
-            names: ['vendor', 'manifest'],
-        }),
+
         new CopyWebpackPlugin([
             {
                 from: './src/assets',
