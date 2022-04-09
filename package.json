@@ -27,7 +27,7 @@
     "json-loader": "^0.5.4",
     "less": "^2.7.2",
     "less-loader": "^2.2.3",
-    "moment": "^2.19.3",
+    "moment": "^2.29.2",
     "prop-types": "15.5.10",
     "react": "^16.2.0",
     "react-cookie": "^1.0.4",
